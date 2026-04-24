@@ -3,6 +3,7 @@ services:
     name: jelly-store-bot
     env: python
     plan: free
+    runtime: "3.11"
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
     envVars:
