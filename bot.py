@@ -15,8 +15,8 @@ from aiogram.enums import ParseMode
 
 # Конфігурація
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-CHANNEL_ID = int(os.getenv("CHANNEL_ID", "-1003655775830"))
-MINI_APP_URL = os.getenv("MINI_APP_URL", "https://ltt.wuaze.com")
+CHANNEL_ID = int(os.getenv("CHANNEL_ID", ))
+MINI_APP_URL = os.getenv("MINI_APP_URL", )
 PHOTO_URL = os.getenv("PHOTO_URL", "https://i.ibb.co/VWrpJfGD/2026-04-17-235426316.png")
 
 if not BOT_TOKEN:
