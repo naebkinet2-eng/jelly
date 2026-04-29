@@ -1,6 +1,11 @@
+import os
+from dotenv import load_dotenv
+
+# Завантаження змінних з .env файлу (для локального запуску)
+load_dotenv()
+
 import asyncio
 import logging
-import os
 from datetime import datetime
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
