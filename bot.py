@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import os
 from datetime import datetime
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
@@ -8,10 +9,13 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
 # Конфігурація
-BOT_TOKEN = "8312721839:AAETwf44GH1IU09uFYeCianp-2CSNcpZTBA"
-CHANNEL_ID = -1003655775830
-MINI_APP_URL = "https://ltt.wuaze.com"
-PHOTO_URL = "https://i.ibb.co/VWrpJfGD/2026-04-17-235426316.png"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHANNEL_ID = int(os.getenv("CHANNEL_ID", "-1003655775830"))
+MINI_APP_URL = os.getenv("MINI_APP_URL", "https://ltt.wuaze.com")
+PHOTO_URL = os.getenv("PHOTO_URL", "https://i.ibb.co/VWrpJfGD/2026-04-17-235426316.png")
+
+if not BOT_TOKEN:
+    raise ValueError("BOT_TOKEN environment variable is not set")
 
 # Налаштування логування
 logging.basicConfig(level=logging.INFO)
