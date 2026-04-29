@@ -55,7 +55,7 @@ async def cmd_start(message: types.Message):
     # Створюємо клавіатуру з кнопкою
     keyboard = InlineKeyboardMarkup(
         inline_keyboard=[
-            [InlineKeyboardButton(text="🛒 За покупками", web_app=types.WebAppInfo(url=MINI_APP_URL))]
+            [InlineKeyboardButton(text="🛒 ДО ПОКУПОК", web_app=types.WebAppInfo(url=MINI_APP_URL))]
         ]
     )
     
@@ -63,10 +63,8 @@ async def cmd_start(message: types.Message):
     welcome_text = (
         "👋 <b>Вітаємо в Jelly Store!</b>\n\n"
         "🔥 <b>Найкращі ціни на ринку</b>\n"
-        "🚀 <b>Швидка доставка</b>\n"
-        "✅ <b>Перевірена якість</b>\n\n"
-        "Натисніть кнопку нижче, щоб переглянути прайс та оформити замовлення!\n\n"
-        "📱 <i>Зручний міні-ап прямо в Telegram</i>"
+        "✅ <b>Перевірена часом якість</b>\n\n"
+        "Натисніть кнопку нижче, щоб переглянути прайс та оформити замовлення!👇\n\n"
     )
     
     await message.answer_photo(
