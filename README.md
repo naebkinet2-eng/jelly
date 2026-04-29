@@ -24,22 +24,12 @@ pip install -r requirements.txt
 
 2. Налаштуйте змінні середовища:
 ```bash
-# Windows (PowerShell)
-$env:BOT_TOKEN="ваш_токен_бота"
-$env:CHANNEL_ID="-1003655775830"
-$env:MINI_APP_URL="https://ltt.wuaze.com"
-$env:PHOTO_URL="https://i.ibb.co/VWrpJfGD/2026-04-17-235426316.png"
 
-# Linux/Mac
-export BOT_TOKEN="ваш_токен_бота"
-export CHANNEL_ID="-1003655775830"
-export MINI_APP_URL="https://ltt.wuaze.com"
-export PHOTO_URL="https://i.ibb.co/VWrpJfGD/2026-04-17-235426316.png"
 ```
 
 3. Запустіть бота:
 ```bash
-python bot.py
+
 ```
 
 ## Налаштування
@@ -110,7 +100,7 @@ jobs:
 Додайте наступні змінні середовища в налаштуваннях Render:
 - `BOT_TOKEN`: ваш токен бота (отримайте у @BotFather)
 - `CHANNEL_ID`: ID вашого каналу (наприклад: `-1003655775830`)
-- `MINI_APP_URL`: URL вашого міні-апу (наприклад: `https://ltt.wuaze.com`)
+- `MINI_APP_URL`: URL вашого міні-апу (наприклад: ``)
 - `PHOTO_URL`: URL фото для привітального повідомлення
 
 ### 4. Налаштування без засинання
