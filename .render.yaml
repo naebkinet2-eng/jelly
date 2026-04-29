@@ -1,16 +1,1 @@
-services:
-  - type: web
-    name: jelly-store-bot
-    env: python
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
-    envVars:
-      - key: BOT_TOKEN
-        value: 8312721839:AAETwf44GH1IU09uFYeCianp-2CSNcpZTBA
-      - key: CHANNEL_ID
-        value: "-1003655775830"
-      - key: MINI_APP_URL
-        value: https://ltt.wuaze.com
-      - key: PHOTO_URL
-        value: https://i.ibb.co/VWrpJfGD/2026-04-17-235426316.png
+
