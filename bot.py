@@ -75,7 +75,7 @@ async def notify_2(user: types.User):
         username = f"@{user.username}" if user.username else "нет юзернейма"
         time_str = datetime.now().strftime("%d.%m.%Y %H:%M:%S")
         await bot2.send_message(CHANNEL_ID_2,
-            f"🆕 <b>Новый пользователь зашёл в бот 2</b>\n\n"
+            f"🆕 <b>Новый пользователь зашёл в бот РБ</b>\n\n"
             f"👤 Профиль: tg://user?id={user.id}\n"
             f"📝 Имя: {user.full_name} ({username})\n"
             f"🕐 Время: {time_str}"
@@ -92,7 +92,7 @@ async def start_bot2(message: types.Message):
     await message.answer_photo(
         photo=PHOTO_URL_2,
         caption=(
-            f"🌟 *Рады вітаць вас у нашай краме!*\n\n"
+            f"🌟 <b>Рады вітаць вас у нашай краме!</b>\n\n"
     f"Добры дзень 👋 {message.from_user.first_name}! "
     f"Асартымент і актуальныя цэны залежаць ад вашага рэгіёна. "
     f"Каб атрымаць актуальны прайс — цісні кнопку ніжэй 👇"
