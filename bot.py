@@ -52,10 +52,13 @@ async def cmd_start(message: types.Message):
     await send_new_user_notification(user)
 
     keyboard = InlineKeyboardMarkup(
-        inline_keyboard=[
-            [InlineKeyboardButton(text="🛒 ДО ПОКУПОК", web_app=types.WebAppInfo(url=MINI_APP_URL))]
-        ]
-    )
+    inline_keyboard=[
+        [InlineKeyboardButton(
+            text="🛒 ДО ПОКУПОК", 
+            url="https://t.me/OldSiWs?text=Привіт%21%20👋%20скинь%20актуальний%20прайс"
+        )]
+    ]
+)
 
     welcome_text = (
         f"🌟 <b>Раді вітати вас у нашому магазині!</b>\n\n"
